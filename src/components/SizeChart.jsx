@@ -50,7 +50,7 @@ const SizeChart = ({ data }) => {
     let dataCenterList = [...new Set(data.map(d => d["Data Center"]))]
     dataCenterList.unshift("All")
 
-    let projectList = [...new Set(data.map(d => d["Project"]))]
+    let projectList = [...new Set(data.map(d => d["Workstream"]))]
     projectList.unshift("All")
 
     let newData = data.filter(d => {
@@ -59,7 +59,7 @@ const SizeChart = ({ data }) => {
     }).filter(dc => {
         return dataCenter === "All" ? dc : dc["Data Center"] === dataCenter
     }).filter(p => {
-        return project === "All" ? p : p["Project"] === project
+        return project === "All" ? p : p["Workstream"] === project
     })
 
     let denormalizedData = getDenormalizedData(newData)
@@ -125,7 +125,7 @@ const SizeChart = ({ data }) => {
                         </select>
                     </div>
                     <div className='m-4 px-4'>
-                        <label>Project: </label>
+                        <label>Workstream: </label>
                         <select className="px-4 font-bold" onChange={(e) => setProject(e.target.value)}>
                             {projectList.map(project => <option key={project} value={project}>{project}</option>)}
                         </select>

@@ -2,7 +2,7 @@ import React from "react";
 
 import { CSVLink } from "react-csv";
 
-const csvData = `Project,AWS Account Name,Name,Data Center,Data Transfer Method,Full or Inc, MB ,Duration Hours,Start Date,End Date
+const csvData = `Workstream,AWS Account Number,Migration Name,Data Center,Data Transfer Method,Full or Incremental, MB ,Duration Hours,Start Date,End Date
 AWS - DC-A prod traffic,MULTIPLE,AWS - DC-A -prod traffic phase 1,DC-A,prod network traffic,Inc,500000,24,1/1/21,3/31/21
 AWS - DC-A prod traffic,MULTIPLE,AWS - DC-A -prod traffic phase 2,DC-A,prod network traffic,Inc,3000000,24,4/1/21,6/30/21
 AWS - DC-A prod traffic,MULTIPLE,AWS - DC-B -prod traffic phase 2,DC-B,prod network traffic,Inc,2000000,24,4/1/21,6/30/21

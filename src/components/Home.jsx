@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DisplayData from './DisplayData';
 import SizeChart from './SizeChart';
 import Download from "./Download";
+import Instructions from './Instructions';
 
 const Home = () => {
     const [csvFile, setCsvFile] = useState();
@@ -44,7 +45,10 @@ const Home = () => {
                         Understand network bandwidth needs for data migration of your customer
                     </p>
                 </div>
-                <div className='grid grid-cols-2 gap-4'>
+                <div className='grid grid-cols-3 gap-4'>
+                    <div>
+                        <Instructions />
+                    </div>
                     <div className="mx-auto text-center">
                         <h2 className="text-xl font-bold text-center uppercase">
                             Upload CSV File

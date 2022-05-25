@@ -11,7 +11,7 @@ const data = [
     },
     {
         "question": "How to use this website?",
-        "answer": "Please download the tenplate from the website, update the csv file with yoir data. Upload the file and analyze the visualization."
+        "answer": "Please read the instructions provided on the top of the webpage."
     },
     {
         "question": "What are the various views?",
@@ -48,6 +48,42 @@ const FAQ = () => {
                         )
                     })}
                 </div>
+                <div>
+                    <h3 className="font-bold text-lg">
+                        What are the various fields and what do they signify?
+                    </h3>
+                    <p>
+                        <span className="font-bold italic text-red-600">All fields are mandatory, please dont enter blanks for any field. For text fields use n/a and </span>
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Workstream:</span> [Text] Project Team responsible for a body of work
+                    </p>
+                    <p>
+                        <span className="font-bold italic">AWS Account Number:</span> [Text or Number] AWS Account to which data is being migrated to
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Migration Name:</span> [Text] Unique identifier per migration. Ex: Oracle-DEV, Oracle-PROD, MyApp-QA
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Data Center:</span> [Text] On-premises Data Center from where the data is being migrated from
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Data Transfer Method:</span> [Text] Method used for Data Migration Ex: DataSync, Dump File
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Full or Incremental:</span> [Text] Bulk load or incremental
+                    </p>
+                    <p>
+                        <span className="font-bold italic">MB:</span> [Number] Storage in Megabytes that is being transferred
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Duration Hours:</span> [Number] Duration in hours available for data transfer. Hours can be less than 24 if the migration needs to be done within a single day. Any migration that exceeds a day should have 24 hours as duration
+                    </p>
+                    <p>
+                        <span className="font-bold italic">Start Date and End Date:</span> [Date in MM/DD/YYYY] Start and End dates of the migration. Both start and end date are included in the calculations
+                    </p>
+                </div>
+
             </div>
         </div>
     );

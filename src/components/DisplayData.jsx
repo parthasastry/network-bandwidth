@@ -6,7 +6,7 @@ const DisplayData = ({ data }) => {
 
     const newData = data.map((d) => {
         let mbps = Number(((d["MB"] * 8) / (d["Duration Hours"] * 60 * 60)).toFixed(2))
-        return { ...d, "Mbps": mbps }
+        return { ...d, "Mbps/Workstream": mbps }
     })
 
     const headers = Object.keys(newData[0])
@@ -22,7 +22,7 @@ const DisplayData = ({ data }) => {
     const tableData = newData.filter((d) => {
         let searchText = text.toLowerCase();
         return (
-            d["Project"].toLowerCase().includes(searchText)
+            d["Workstream"].toLowerCase().includes(searchText)
         );
     }).map((item, index) => {
         return (
@@ -52,7 +52,7 @@ const DisplayData = ({ data }) => {
                                 onChange={(e) => setText(e.target.value)}
                                 className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
                                 type="text"
-                                placeholder="Search Project..."
+                                placeholder="Search Workstream..."
                             />
                         </div>
                     </form>
