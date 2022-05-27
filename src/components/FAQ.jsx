@@ -7,7 +7,7 @@ const data = [
     },
     {
         "question": "Why should this website be used?",
-        "answer": "Understanding the bandwidth required is a question asked by cloud migration teams. This tool is a simple facility to provide bandwidth calculation. Often teams use spreadsheets to do the calculations. It is not only cumbersome, but also requires the spreadsheet being sent over the wire to other team members and customers."
+        "answer": "This tool is a simple facility to provide bandwidth calculation that helps customers and migration teams in determining the network bandwidth needs."
     },
     {
         "question": "How to use this website?",
@@ -15,7 +15,7 @@ const data = [
     },
     {
         "question": "What are the various views?",
-        "answer": "There are two views. One, is a graphical view of size of data transferred per day, another is mbps requirement per day. There is also a facility provided to view and search data that is uploaded."
+        "answer": "There are three views. One, is a graphical view of size of data transferred per day. Second is mbps requirement per day. Third view is to search data that is uploaded."
     },
     {
         "question": "Will my data be persisted?",
@@ -53,7 +53,7 @@ const FAQ = () => {
                         What are the various fields and what do they signify?
                     </h3>
                     <p>
-                        <span className="font-bold italic text-red-600">All fields are mandatory, please dont enter blanks for any field. For text fields use n/a and </span>
+                        <span className="font-bold italic text-red-600">All fields are mandatory, please dont enter blanks for any field. </span>
                     </p>
                     <p>
                         <span className="font-bold italic">Workstream:</span> [Text] Project Team responsible for a body of work

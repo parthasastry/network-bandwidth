@@ -11,13 +11,13 @@ const Navbar = () => {
                     <Link to="home" smooth={true} duration={500}>Home</Link>
                 </li>
                 <li className='p-4'>
-                    <Link to="summary" smooth={true} duration={500}>Summary</Link>
+                    <Link to="charts" smooth={true} duration={500} offset={-100}>Charts</Link>
                 </li>
                 <li className='p-4'>
-                    <Link to="details" smooth={true} duration={500}>Details</Link>
+                    <Link to="details" smooth={true} duration={500} offset={-100}>Details</Link>
                 </li>
                 <li className='p-4'>
-                    <Link to="faq" smooth={true} duration={500}>FAQ</Link>
+                    <Link to="faq" smooth={true} duration={500} offset={-100}>FAQ</Link>
                 </li>
 
             </ul>

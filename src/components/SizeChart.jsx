@@ -106,7 +106,7 @@ const SizeChart = ({ data }) => {
 
 
     return (
-        <div name="summary">
+        <div name="charts">
             <h2 className="text-2xl font-bold text-center uppercase">
                 Charts
             </h2>
